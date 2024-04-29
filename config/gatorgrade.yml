@@ -1,0 +1,97 @@
+# check writing/proposal.md
+- writing/proposal.md:
+  - description: Ensure that the proposal.md file exists in the writing/ directory
+    check: ConfirmFileExists
+  # - description: Write a minimum number of meaningful words in the reflections
+  #   check: CountFileWords
+  #   options:
+  #     count: 100
+  #     exact: false
+  - description: Complete all TODOs, remove the TODO markers, and rewrite comments for writing/proposal.md
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in the writing/proposal.md file
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+#
+# check writing/report.md
+#
+- writing/report.md:
+  - description: Ensure that the report.md file exists in the writing/ directory
+    check: ConfirmFileExists
+  # - description: Write a minimum number of meaningful words in the reflections
+  #   check: CountFileWords
+  #   options:
+  #     count: 100
+  #     exact: false
+  - description: Complete all TODOs, remove the TODO markers, and rewrite comments for writing/report.md
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in the writing/report.md file
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+#
+# check writing/researchNotebook.md
+#
+- writing/researchNotebook.md:
+  - description: Ensure that the researchNotebook.md file exists in the writing/ directory
+    check: ConfirmFileExists
+  # - description: Write a minimum number of meaningful words in the reflections
+  #   check: CountFileWords
+  #   options:
+  #     count: 100
+  #     exact: false
+  - description: Complete all TODOs, remove the TODO markers, and rewrite comments for writing/researchNotebook.md
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in the writing/researchNotebook.md file
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+#
+# check source/artifact.py
+#
+- source/artifact.py:
+  - description: Ensure that the artifact.py file exists in the source/ directory
+    check: ConfirmFileExists
+  # - description: Write a minimum number of meaningful words in the reflections
+  #   check: CountFileWords
+  #   options:
+  #     count: 100
+  #     exact: false
+  - description: Complete all TODOs, remove the TODO markers, and rewrite comments for source/artifact.py
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in the source/artifact.py file
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+
+
+  # count number of commits in the GitHub repository
+- description: Have at least a specific minimum of commits (10) in the repository
+  check: CountCommits
+  options:
+    count: 10
